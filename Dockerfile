@@ -34,10 +34,10 @@ CMD ["/start.sh"]
 
 
 ## Docker image name:                           docker-image-nginx-php-fpm-wordpress
-## Docker Hub image name:                       devtutspace/docker-image-nginx-php-fpm-wordpress:latest
+## Docker Hub image name:                       devtutspace/docker-image-nginx-php-fpm-wordpress:1.10.3
 ## Build command:                               docker build -t docker-image-nginx-php-fpm-wordpress ./
 ## Build Command No Cache:                      docker build --no-cache -t docker-image-nginx-php-fpm-wordpress ./
-## Docker Image Tag command:                    docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:latest
-## Docker Image Push command:                   docker push devtutspace/docker-image-nginx-php-fpm-wordpress:latest
-## Docker Image Build, Tag, Push:               docker build -t docker-image-nginx-php-fpm-wordpress ./ && docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:latest && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:latest
-## Docker Image Build no cache, Tag, Push:      docker build --no-cache -t docker-image-nginx-php-fpm-wordpress ./ && docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:latest && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:latest
+## Docker Image Tag command:                    docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:1.10.3
+## Docker Image Push command:                   docker push devtutspace/docker-image-nginx-php-fpm-wordpress:1.10.3
+## Docker Image Build, Tag, Push:               docker build -t docker-image-nginx-php-fpm-wordpress ./ && docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:1.10.3 && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:1.10.3
+## Docker Image Build no cache, Tag, Push:      docker build --no-cache -t docker-image-nginx-php-fpm-wordpress ./ && docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:1.10.3 && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:1.10.3
