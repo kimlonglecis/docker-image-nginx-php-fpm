@@ -30,6 +30,7 @@ COPY $IONCUBE_PATH/$IONCUBE_FILE $IONCUBE_PATH_DOCKER/$IONCUBE_FILE
 #ENTRYPOINT [ "/entrypoint.sh" ]
 ##  5. Set WOKR_DIR
 #WORKDIR /var/www/html
+RUN composer self-update --2
 CMD ["/start.sh"]
 
 
