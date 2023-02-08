@@ -1,5 +1,7 @@
-# richarvey/nginx-php-fpm php7.4.9
-FROM richarvey/nginx-php-fpm:1.10.3
+# richarvey/nginx-php-fpm:2.2.0
+# Docker Tag	PHP Version	    Nginx Version	Alpine Version	Container Scripts	Notes
+# 2.2.0	        8.1.12	        1.22.1	        3.16	        0.3.16	            nginx upgraded to 1.22.1 php to 8.1.12
+FROM richarvey/nginx-php-fpm:0683e9e2
 
 ENV CONF_D /usr/local/etc/php/conf.d
 ENV IONCUBE_PATH files/ioncube
@@ -19,7 +21,7 @@ RUN apk update && \
     apk add less
 
 COPY files/php.ini /usr/local/etc/php/php.ini
-COPY files/wp /usr/local/bin/wp
+RUN curl -o /usr/local/bin/wp https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 
 ##  Install Ioncube
 RUN  touch $CONF_D/00-ioncube.ini
