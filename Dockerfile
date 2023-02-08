@@ -1,6 +1,6 @@
 # richarvey/nginx-php-fpm:2.2.0
-# Docker Tag	PHP Version	    Nginx Version	Alpine Version	Container Scripts	Notes
-# 2.2.0	        8.1.12	        1.22.1	        3.16	        0.3.16	            nginx upgraded to 1.22.1 php to 8.1.12
+# Docker Tag	Docker versionPHP Version	    Nginx Version	Alpine Version	Container Scripts	Notes
+# 0683e9e2      2.2.0	        8.1.12	        1.22.1	        3.16	        0.3.16	            nginx upgraded to 1.22.1 php to 8.1.12
 FROM richarvey/nginx-php-fpm:0683e9e2
 
 ENV CONF_D /usr/local/etc/php/conf.d
@@ -36,11 +36,11 @@ RUN composer self-update --2
 CMD ["/start.sh"]
 
 
-## Docker image name:                           docker-image-nginx-php-fpm-wordpress
-## Docker Hub image name:                       devtutspace/docker-image-nginx-php-fpm-wordpress:latest
-## Build command:                               docker build -t docker-image-nginx-php-fpm-wordpress ./
-## Build Command No Cache:                      docker build --no-cache -t docker-image-nginx-php-fpm-wordpress ./
-## Docker Image Tag command:                    docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:latest
-## Docker Image Push command:                   docker push devtutspace/docker-image-nginx-php-fpm-wordpress:latest
-## Docker Image Build, Tag, Push:               docker build -t docker-image-nginx-php-fpm-wordpress ./ && docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:latest && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:latest
-## Docker Image Build no cache, Tag, Push:      docker build --no-cache -t docker-image-nginx-php-fpm-wordpress ./ && docker tag docker-image-nginx-php-fpm-wordpress devtutspace/docker-image-nginx-php-fpm-wordpress:latest && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:latest
+## Docker image name:                           docker-image-nginx-php-fpm-wordpress:2.2.0
+## Docker Hub image name:                       devtutspace/docker-image-nginx-php-fpm-wordpress:2.2.0
+## Build command:                               docker build -t docker-image-nginx-php-fpm-wordpress:2.2.0 ./
+## Build Command No Cache:                      docker build --no-cache -t docker-image-nginx-php-fpm-wordpress:2.2.0 ./
+## Docker Image Tag command:                    docker tag docker-image-nginx-php-fpm-wordpress:2.2.0 devtutspace/docker-image-nginx-php-fpm-wordpress:2.2.0
+## Docker Image Push command:                   docker push devtutspace/docker-image-nginx-php-fpm-wordpress:2.2.0
+## Docker Image Build, Tag, Push:               docker build -t docker-image-nginx-php-fpm-wordpress:2.2.0 ./ && docker tag docker-image-nginx-php-fpm-wordpress:2.2.0 devtutspace/docker-image-nginx-php-fpm-wordpress:2.2.0 && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:2.2.0
+## Docker Image Build no cache, Tag, Push:      docker build --no-cache -t docker-image-nginx-php-fpm-wordpress:2.2.0 ./ && docker tag docker-image-nginx-php-fpm-wordpress:2.2.0 devtutspace/docker-image-nginx-php-fpm-wordpress:2.2.0 && docker push devtutspace/docker-image-nginx-php-fpm-wordpress:2.2.0
