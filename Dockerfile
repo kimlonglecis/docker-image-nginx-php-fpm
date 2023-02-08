@@ -4,7 +4,7 @@
 
 # Docker Tag	PHP Version	    Nginx Version	Alpine Version	Container Scripts	Notes
 # 1.9.1	        7.4.5	        1.16.1	        3.11	        0.3.13	            upgrade to PHP 7.4.5
-FROM richarvey/nginx-php-fpm:1.9.1
+FROM richarvey/nginx-php-fpm:0683e9e2
 
 ENV CONF_D /usr/local/etc/php/conf.d
 ENV IONCUBE_PATH files/ioncube
